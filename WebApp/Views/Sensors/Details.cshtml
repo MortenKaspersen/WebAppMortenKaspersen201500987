@@ -1,0 +1,48 @@
+﻿@model WebApp.Models.Sensor
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sensor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TreeSpecies)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreeSpecies)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SensorId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SensorId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GpsLongitude)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GpsLongitude)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GpsLatitude)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GpsLatitude)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
